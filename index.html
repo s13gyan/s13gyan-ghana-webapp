@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Find houses, apartments and land for sale or rent across Ghana.">
+  <title>Ghana Estates | Find a place to call home</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Ghana Estates home"><span class="brand-mark">G</span><span>Ghana<span class="brand-light">Estates</span></span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#properties">Properties</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#contact">Contact us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>Find a place<br>to call <em>home.</em></h1>
+        <p class="hero-copy">Explore homes, apartments and land in communities across Ghana.</p>
+        <a class="button button-gold" href="#properties">Explore properties <span>→</span></a>
+      </div>
+      <div class="hero-note"><span class="note-dot"></span> Discover opportunities across Ghana</div>
+    </section>
+
+    <section class="search-panel" aria-label="Search properties">
+      <div class="search-intro"><span class="eyebrow dark">START YOUR SEARCH</span><h2>What are you looking for?</h2></div>
+      <form id="search-form" class="search-form">
+        <label>Property type
+          <select id="type-filter">
+            <option value="all">All property types</option>
+            <option value="house">Houses</option>
+            <option value="apartment">Apartments</option>
+            <option value="land">Land</option>
+          </select>
+        </label>
+        <label>Location
+          <select id="location-filter">
+            <option value="all">All locations</option>
+            <option value="Accra">Accra</option>
+            <option value="Kumasi">Kumasi</option>
+            <option value="Tema">Tema</option>
+            <option value="Takoradi">Takoradi</option>
+          </select>
+        </label>
+        <label>Purpose
+          <select id="purpose-filter">
+            <option value="all">Buy or rent</option>
+            <option value="Sale">For sale</option>
+            <option value="Rent">For rent</option>
+          </select>
+        </label>
+        <button class="button button-dark" type="submit">Search properties</button>
+      </form>
+    </section>
+
+    <section class="section properties-section" id="properties">
+      <div class="section-heading">
+        <div><p class="eyebrow dark">A PLACE FOR EVERY STORY</p><h2>Featured properties</h2><p class="muted">Explore a sample of homes and land from around Ghana.</p></div>
+        <span class="listing-count" id="listing-count">6 properties</span>
+      </div>
+      <div class="property-grid" id="property-grid" aria-live="polite">
+        <article class="property-card"><div class="property-image image-one"><span class="tag">For sale</span></div><div class="property-info"><p class="location">East Legon, Accra</p><h3>Contemporary family home</h3><p class="details">4 beds <span>•</span> 3 baths <span>•</span> House</p><strong>GH₵ 2,450,000</strong></div></article>
+        <article class="property-card"><div class="property-image image-two"><span class="tag rent">For rent</span></div><div class="property-info"><p class="location">Ahodwo, Kumasi</p><h3>Modern city apartment</h3><p class="details">2 beds <span>•</span> 2 baths <span>•</span> Apartment</p><strong>GH₵ 6,500 / month</strong></div></article>
+        <article class="property-card"><div class="property-image image-three"><span class="tag">For sale</span></div><div class="property-info"><p class="location">Community 25, Tema</p><h3>Serviced residential plot</h3><p class="details">0 beds <span>•</span> 0 baths <span>•</span> Land</p><strong>GH₵ 280,000</strong></div></article>
+        <article class="property-card"><div class="property-image image-four"><span class="tag rent">For rent</span></div><div class="property-info"><p class="location">Airport Residential, Accra</p><h3>Bright executive apartment</h3><p class="details">2 beds <span>•</span> 2 baths <span>•</span> Apartment</p><strong>GH₵ 9,000 / month</strong></div></article>
+        <article class="property-card"><div class="property-image image-five"><span class="tag">For sale</span></div><div class="property-info"><p class="location">KNUST, Kumasi</p><h3>Spacious family residence</h3><p class="details">3 beds <span>•</span> 2 baths <span>•</span> House</p><strong>GH₵ 1,150,000</strong></div></article>
+        <article class="property-card"><div class="property-image image-six"><span class="tag">For sale</span></div><div class="property-info"><p class="location">Beach Road, Takoradi</p><h3>Coastal development land</h3><p class="details">0 beds <span>•</span> 0 baths <span>•</span> Land</p><strong>GH₵ 195,000</strong></div></article>
+      </div>
+      <p class="demo-note">Demo listings for the website layout. Verify property details, ownership and documentation independently before making a payment.</p>
+    </section>
+
+    <section class="why-section" id="how-it-works">
+      <div class="section why-inner">
+        <div><p class="eyebrow">A CLEARER WAY TO FIND PROPERTY</p><h2>Make your next move<br>with more confidence.</h2><p class="why-copy">Finding property should feel straightforward. Browse options, compare locations and get in touch to ask the right questions.</p></div>
+        <div class="steps">
+          <div class="step"><span>01</span><div><h3>Explore</h3><p>Browse properties by type, location and purpose.</p></div></div>
+          <div class="step"><span>02</span><div><h3>Compare</h3><p>Review the details and shortlist places that suit you.</p></div></div>
+          <div class="step"><span>03</span><div><h3>Connect</h3><p>Contact the property team to arrange a conversation or viewing.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <p class="eyebrow dark">ROOTED IN GHANA</p><h2>Property possibilities,<br>all in one place.</h2>
+      <p class="about-copy">Ghana Estates is a demonstration property website designed to make it easier to discover residential property opportunities in Ghana. The sample listings can be replaced with verified listings and real contact details.</p>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><p class="eyebrow">LET'S FIND YOUR NEXT PLACE</p><h2>Have a property question?</h2><p>Send us a message and our team will get back to you.</p></div>
+      <form id="contact-form" class="contact-form">
+        <label>Your name<input name="name" required placeholder="Enter your name"></label>
+        <label>Email address<input name="email" type="email" required placeholder="you@example.com"></label>
+        <label>How can we help?<textarea name="message" rows="3" required placeholder="Tell us what you are looking for"></textarea></label>
+        <button class="button button-gold" type="submit">Prepare message →</button>
+        <p class="form-message" id="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand footer-brand" href="#"><span class="brand-mark">G</span><span>Ghana<span class="brand-light">Estates</span></span></a><p>© <span id="year"></span> Ghana Estates. Demonstration website.</p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>
